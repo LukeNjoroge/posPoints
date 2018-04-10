@@ -1,0 +1,7 @@
+c:\users\user\source\repos\posConsole\posConsole\bin\Debug\posConsole.exe.config
+c:\users\user\source\repos\posConsole\posConsole\bin\Debug\posConsole.exe
+c:\users\user\source\repos\posConsole\posConsole\bin\Debug\posConsole.pdb
+c:\users\user\source\repos\posConsole\posConsole\obj\Debug\posConsole.csprojResolveAssemblyReference.cache
+c:\users\user\source\repos\posConsole\posConsole\obj\Debug\posConsole.csproj.CoreCompileInputs.cache
+c:\users\user\source\repos\posConsole\posConsole\obj\Debug\posConsole.exe
+c:\users\user\source\repos\posConsole\posConsole\obj\Debug\posConsole.pdb
