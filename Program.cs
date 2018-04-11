@@ -9,7 +9,7 @@ namespace posConsole
     public class productItem
     {
         public int ProductId = 5;
-        public List<string> allProduct = new List<string> { "Cement @ 750.00/= Select 1", "Tank @ 40,000.00/= Select 2", "Fiber Glass @ 1,400.00/= Select 3", "Doors & Windows @ 500.00/= Select 4", "Iron Sheets @ 1000.00/= Select 5" };
+        public List<string> allProduct = new List<string> { "Cement @ 750.00/= ---> Select 1", "Tank @ 40,000.00/= ---> Select 2", "Fiber Glass @ 1,400.00/= ---> Select 3", "Doors & Windows @ 500.00/= ---> Select 4", "Iron Sheets @ 1000.00/= ---> Select 5" };
 
         public List<string> GetList()
         {
@@ -102,6 +102,8 @@ namespace posConsole
                     resultPoints = prodQuantityDouble * ironSheetsPoints;
                     break;
             }
+            resultPoints = Math.Truncate(resultPoints);
+
             Console.WriteLine("Total Amount:" + resultAmount);
             Console.WriteLine("Points Earned:" + resultPoints);
             Console.ReadLine();
