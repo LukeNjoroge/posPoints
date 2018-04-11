@@ -30,7 +30,8 @@ namespace posConsole
 
             int productName;
             string productQuantity;
-            double resultTotal = 0;
+            double resultPoints = 0;
+            double resultAmount = 0;
 
             //every point is 200/=
             int points = 200;
@@ -77,26 +78,32 @@ namespace posConsole
             switch (productName)
             {
                 case 1:
-                    resultTotal = prodQuantityDouble * cementPoints;
+                    resultAmount = prodQuantityDouble * cementPrice;
+                    resultPoints = prodQuantityDouble * cementPoints;
                     break;
 
                 case 2:
-                    resultTotal = prodQuantityDouble * tankPoints;
+                    resultAmount = prodQuantityDouble * tankPrice;
+                    resultPoints = prodQuantityDouble * tankPoints;
                     break;
 
                 case 3:
-                    resultTotal = prodQuantityDouble * fiberGlassPoints;
+                    resultAmount = prodQuantityDouble * fiberGlassPrice;
+                    resultPoints = prodQuantityDouble * fiberGlassPoints;
                     break;
 
                 case 4:
-                    resultTotal = prodQuantityDouble * doorsWindowsPoints;
+                    resultAmount = prodQuantityDouble * doorsWindowsPrice;
+                    resultPoints = prodQuantityDouble * doorsWindowsPoints;
                     break;
 
                 case 5:
-                    resultTotal = prodQuantityDouble * ironSheetsPoints;
+                    resultAmount = prodQuantityDouble * ironSheetsPrice;
+                    resultPoints = prodQuantityDouble * ironSheetsPoints;
                     break;
             }
-            Console.WriteLine("Points Earned:" + resultTotal);
+            Console.WriteLine("Total Amount:" + resultAmount);
+            Console.WriteLine("Points Earned:" + resultPoints);
             Console.ReadLine();
         }
     }
