@@ -7,16 +7,14 @@ using posConsole;
 
 namespace posConsole
 {
-    class PointCalculation
+    public static class PointCalculation
     {
-        public double PointsCalc(double productAmount) 
+        private const int points = 200;
+
+        public static double PointsCalc(double productAmount) 
         {
-
-            int points = 200;
-
             double resultPoints = productAmount / points;
-            resultPoints = Math.Truncate(resultPoints);
-            return resultPoints;
+            return Math.Truncate(resultPoints);
         }
     }
 }

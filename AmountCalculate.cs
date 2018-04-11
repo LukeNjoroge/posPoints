@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace posConsole
 {
-    class AmountCalculate
+    public static class AmountCalculate
     {
        
-        public double AmountCalc(double productPrice, double productQuantity)
+        public static double AmountCalc(double productPrice, double productQuantity)
         {
             
-            double resultAmount = productPrice * productQuantity;
-            return resultAmount;
+            return productPrice * productQuantity;
+            
         }
     }
 }

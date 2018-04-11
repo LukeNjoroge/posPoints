@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace posConsole
 {
-    class ProductPrice
+    public static class ProductPrice
     {
-        public double ProdPrice(double pointproductNo)
+        public static double ProdPrice(double pointproductNo)
         {
             double price = 0;
             switch (pointproductNo)

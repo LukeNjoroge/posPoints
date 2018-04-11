@@ -61,17 +61,9 @@ namespace posConsole
                 prodQuantityDouble = Convert.ToDouble(Console.ReadLine());
             }
 
-            posConsole.ProductPrice pName = new ProductPrice();
-            pName.ProdPrice(productName);
-            productPrice = pName.ProdPrice(productName);
-
-            posConsole.AmountCalculate amtName = new AmountCalculate();
-            amtName.AmountCalc(productPrice, prodQuantityDouble);
-            productAmount = amtName.AmountCalc(productPrice, prodQuantityDouble);
-
-            posConsole.PointCalculation prodName = new PointCalculation();
-            prodName.PointsCalc(productAmount);
-            productPoints = prodName.PointsCalc(productAmount);
+            productPrice = ProductPrice.ProdPrice(productName);
+            productAmount = AmountCalculate.AmountCalc(productPrice, prodQuantityDouble);
+            productPoints = PointCalculation.PointsCalc(productAmount);
 
             Console.WriteLine("Total Amount:" + productAmount);
             Console.WriteLine("Total Points:" + productPoints);
